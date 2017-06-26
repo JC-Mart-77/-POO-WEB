@@ -10,14 +10,5 @@ function mouseLeave(){
 }
 
 
-function mouseEnter(){
-	document.getElementById("btn-puntos").style.backgroundColor = "#000";
-	document.getElementById("btn-puntos").style.color = "#fff";
-}
-
-function mouseLeave(){
-	document.getElementById("btn-puntos").style.backgroundColor = "#fff";
-	document.getElementById("btn-puntos").style.color = "#000";
-}
 
 
