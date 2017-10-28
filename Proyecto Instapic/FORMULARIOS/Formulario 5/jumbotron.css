@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif; 
+	box-sizing: border-box;
+}
+
+body {
+  background: #FAFAFA;
+}
+
+.navbar-inverse {
+    background-color: #FFFFFF;
+    border-color:  #FFFFFF;
+    height:100px
+    
+}
+
+.navbar-brand{
+	margin-right: 250px
+}
+
+.iconos{
+	margin-left: 250px
+}
+
+.centrado{
+	margin-left:250px;
+	margin-top:100px;
+	width:600px;
+	height:350px; 
+	
+}
+
+.grande
+{	
+	
+	width: 712px;
+	height:200px; 
+	margin-top:160px;
+	margin-left: 180px
+
+
+}
+.izquierda
+{
+	float:left;
+	width:152px;
+	height:152px; 
+	
+}
+.derecha
+{
+	float:left;
+	width:440px;
+	height:152px; 
+margin-left: 93px;
+padding-left: 5px;
+
+}
+.editar
+{
+	
+	margin-left: 0px;
+	width: 120px;
+	height: 30px;
+	background: #FAFAFA;
+	text-align: center;
+	margin-top: 10px;
+	font-weight: bold;
+	float: left;
+}
+.configuracion
+{
+	margin-left:0px;
+	width: 30px;
+	height: 30px;
+	background: #FAFAFA;
+	text-align: center;
+	margin-top:12px;
+	font-weight: bold;
+	float: left;
+
+	padding: 0;
+
+}
+.pequeños
+{
+	width: 100px;
+	height: 40px;
+	float:left;
+
+}
+.grande2
+{
+
+ width: 1020px ; 
+ height: 305px; 
+ margin-top: 200px ; 
+ margin-left: 25px; 
+ margin-right: 19px;
+ margin:auto;
+
+
+}
+.pequeños2
+{
+	width: 325px;
+	height: 300px;
+	float:left;
+
+
+}
+.fotos
+{
+	width: 300px; 
+	height: 295px; 
+	float: right
+}
