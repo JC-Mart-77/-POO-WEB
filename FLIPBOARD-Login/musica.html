@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="icon" href="imagenes/logo2.png" sizes="16x16" type="image/jpg">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/fonts.css">
   
 </head>
 <body>       
 
-  <span class="ir-arriba icon-eject"></span>
+ <span class="ir-arriba icon-eject"></span>
+
   <div class="container">
           <div class="navbar-header">
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -51,17 +53,18 @@
     
      <div class="container">
           <center><h3>MÚSICA</h3></center>
-           
+          
           <div id="h">
               <nav aria-label="...">
               <ul class="pager">
-                  <li><a href="#" class="button" id="seguir">Seguir</a></li>
+              	
+                  <li><a href="#" class="button" data-loading-text="Siguiendo.." id="seguir">Seguir</a></li>
                   <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>
                 </ul>
             </nav>
           </div>  
       </div>
-
+ <span id="result"></span>
 
 	<center><div class="container">
 	     <hr/>
@@ -277,8 +280,9 @@
 
 	<!-- Latest compiled and minified JavaScript -->
   <script src="js/arriba.js"></script>
+  <script src="js/controlador.js"></script>
   <script src="js/notificaciones.js"></script>
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
