@@ -1,0 +1,114 @@
+pasos
+
+carga y visualizacion de imagenes
+---------------------------------
+
+
+1-crear un formulario html para la carga de imagenes
+	con los campos: descripcion de tipo texto
+		        imagen de tipo file
+        con el metodo post 
+        en el action recibir.php
+        un metodo de encriptación multipartes
+-----------------------------------------------------
+2-recibir el array con la información de la imagen
+3-crear una base de datos llamada base con una tabla llamada datos con 3 campos
+  id autoincrement primary key
+  ruta varchar(150) 
+  descripcion text puede ser null
+
+4-conectarnos a la base de datos
+5-crear una carpeta en el servidor llamada imagenes
+6-almacenar los datos del array $_FILES en las variables
+  $rutaenServidor
+  $rutaTemporal
+  $nombreImagen	
+  $rutaDestino
+
+7-usar el comando move_uploaded_file(origen,destino); para copiar la imagen
+  a el servidor en la carpeta imagenes
+8-construir la cadena sql y guardar los datos en la base de datos
+9-informar al usuario si tuvo exito la operación  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3-crear la base de datos llamada base con la tabla datos y los campos id autoincrement y primary key, ruta varchar , descripcion text
+
+4-conectarnos a la base de datos base
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$conexion=mysql_connect('localhost','root','') or die('No hay conexión a la base de datos');
+$db=mysql_select_db('base',$conexion)or die('no existe la base de datos.');
+
+$rutaEnServidor='imagenes';
+$rutaTemporal=$_FILES['imagen']['tmp_name'];
+$nombreImagen=$_FILES['imagen']['name'];
+$rutaDestino=$rutaEnServidor.'/'.$nombreImagen;
+move_uploaded_file($rutaTemporal,$rutaDestino);
+
+$desc=$_POST['descripcion'];
+$sql="INSERT INTO datos (ruta,descripcion) values('".$rutaDestino."','".$desc."')";
+$res=mysql_query($sql,$conexion);
+if ($res){
+	echo 'inserción con exito';
+}else{
+    echo 'no se puedo insertar';
+} 
